@@ -3,15 +3,15 @@ let body = document.getElementById("body").style.backgroundColor = "silver";
 let title = document.getElementById("title").style.color = "green";
 // Change the font case for h3 title tags to uppercase
 
-
+document.getElementById("fruList").style.transform = "uppercase";
 
 // Add one more fruit to the fruits list
-let fruList = document.getElementById("fruList");
-    let newFruit = document.createElement("li");
-    newFruit.textContent = "Apple";
-    fruList.appendChild(newFruit);
+let frlist = document.createElement('li')
+frlist.innerHTML = "Strawberry";
+document.getElementById('fruList').appendChild(frlist)
 // Add one more vegetable to the vegetables
-let vegList = document.getElementById("vegList");
-    let newVeg = document.createElement("li");
-    newVeg.textContent = "Cabbage";
-    vegList.appendChild(newVeg);
+
+let  list = document.createElement('li')
+list.innerHTML = "Cabbage";
+document.getElementById('vegList').appendChild(list)
+
